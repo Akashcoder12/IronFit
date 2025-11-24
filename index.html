@@ -1,0 +1,325 @@
+
+
+<!-- ==================== gym-landing-dark.html ==================== -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IronCore Gym — Landing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="IronCore Gym — Strength, Cardio & Coaching" />
+  <style>
+    /* small extras */
+    .glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(6px); }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+  <!-- navbar -->
+  <header class="fixed w-full z-40">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-md bg-gradient-to-r from-red-600 to-yellow-500 flex items-center justify-center font-bold">IC</div>
+        <div>
+          <div class="text-lg font-semibold">IronCore Gym</div>
+          <div class="text-xs text-gray-400">Strength • Cardio • Coaching</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-gray-300">
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#trainers" class="hover:text-white">Trainers</a>
+        <a href="#plans" class="hover:text-white">Plans</a>
+        <a href="#timetable" class="hover:text-white">Timetable</a>
+        <a href="#gallery" class="hover:text-white">Gallery</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a id="whatsappTop" href="#" class="hidden md:inline-flex items-center gap-2 bg-green-500 text-gray-900 px-4 py-2 rounded-md font-medium">WhatsApp</a>
+        <button id="menuBtn" class="md:hidden p-2 rounded-md glass">☰</button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden bg-gray-800/60 glass">
+      <div class="px-4 py-3 flex flex-col gap-3">
+        <a href="#about">About</a>
+        <a href="#trainers">Trainers</a>
+        <a href="#plans">Plans</a>
+        <a href="#timetable">Timetable</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- hero -->
+  <main class="pt-28">
+    <section class="relative bg-gradient-to-br from-gray-900/40 to-black/60">
+      <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Build Strength. Transform Your Body.</h1>
+          <p class="mt-4 text-gray-300">Personalized training, modern equipment and flexible plans to fit your life. Join now and get your first week free.</p>
+
+          <div class="mt-6 flex gap-4 items-center">
+            <a id="ctaWhats" href="#" class="bg-red-600 hover:bg-red-700 px-5 py-3 rounded-md font-semibold">Join Now — WhatsApp</a>
+            <a href="#plans" class="border border-gray-700 px-4 py-3 rounded-md">View Plans</a>
+          </div>
+
+          <div class="mt-6 text-sm text-gray-400">
+            <div>Open: Mon–Sat • 5:00 AM – 11:00 PM</div>
+            <div class="mt-2">Location: 12, Fitness Lane, YourCity</div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden shadow-2xl">
+            <video autoplay muted loop playsinline class="w-full h-80 object-cover">
+              <source src="https://images.unsplash.com/photo-1554284126-aa88f22d8b86?auto=format&fit=crop&w=1400&q=60" type="video/mp4">
+            </video>
+          </div>
+          <div class="absolute -bottom-8 left-6 flex gap-3">
+            <img src="C:\Users\DELL\OneDrive\Desktop\company\IronFit\gym5.jpg" class="w-28 h-28 object-cover rounded-lg border-4 border-gray-900 shadow-lg">
+            <img src="C:\Users\DELL\OneDrive\Desktop\company\IronFit\gym4.jpg" class="w-28 h-28 object-cover rounded-lg border-4 border-gray-900 shadow-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-16">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-3xl font-bold">About IronCore</h2>
+          <p class="mt-4 text-gray-300">We focus on strength training, functional fitness, and nutrition coaching. Our experienced trainers help you reach goals safely and sustainably.</p>
+          <ul class="mt-4 text-gray-400 space-y-2">
+            <li>• Modern equipment & free weights</li>
+            <li>• Personal & group training</li>
+            <li>• Customized nutrition plans</li>
+          </ul>
+          <div class="mt-6">
+            <a href="#contact" class="inline-flex items-center gap-2 bg-yellow-500 text-black px-4 py-2 rounded-md font-semibold">Book Free Trial</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=800&q=60" class="rounded-lg object-cover h-40 w-full">
+          <img src="C:\Users\DELL\OneDrive\Desktop\company\IronFit\gym4.jpg" class="rounded-lg object-cover h-40 w-full">
+          <img src="C:\Users\DELL\OneDrive\Desktop\company\IronFit\gym3.jpg" class="rounded-lg object-cover h-40 w-full">
+          <img src="C:\Users\DELL\OneDrive\Desktop\company\IronFit\gym1.jpg" class="rounded-lg object-cover h-40 w-full">
+        </div>
+      </div>
+    </section>
+
+    <!-- trainers -->
+    <section id="trainers" class="bg-gray-800/60 glass py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-2xl font-bold">Our Trainers</h3>
+        <div class="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <!-- trainer card -->
+          <div class="bg-gray-900 rounded-xl p-4 flex gap-4 items-center">
+            <img src="C:\Users\DELL\OneDrive\Desktop\company\IronFit\gym6.jpg" class="w-20 h-20 rounded-lg object-cover">
+            <div>
+              <div class="font-semibold">Rohit Sharma</div>
+              <div class="text-sm text-gray-400">Strength Coach</div>
+              <div class="mt-2 text-xs text-gray-500">10+ yrs experience</div>
+            </div>
+          </div>
+
+          <div class="bg-gray-900 rounded-xl p-4 flex gap-4 items-center">
+            <img src="C:\Users\DELL\OneDrive\Desktop\company\IronFit\gym5.jpg" class="w-20 h-20 rounded-lg object-cover">
+            <div>
+              <div class="font-semibold">Neha Kapoor</div>
+              <div class="text-sm text-gray-400">Cardio & HIIT</div>
+              <div class="mt-2 text-xs text-gray-500">CrossFit certified</div>
+            </div>
+          </div>
+
+          <div class="bg-gray-900 rounded-xl p-4 flex gap-4 items-center">
+            <img src="C:\Users\DELL\OneDrive\Desktop\company\IronFit\gym6.jpg" class="w-20 h-20 rounded-lg object-cover">
+            <div>
+              <div class="font-semibold">Amit Verma</div>
+              <div class="text-sm text-gray-400">Functional Trainer</div>
+              <div class="mt-2 text-xs text-gray-500">Nutrition coach</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- plans -->
+    <section id="plans" class="max-w-6xl mx-auto px-6 py-16">
+      <h3 class="text-2xl font-bold">Membership Plans</h3>
+      <div class="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 rounded-xl p-6">
+          <div class="text-sm text-gray-400">Starter</div>
+          <div class="text-3xl font-bold mt-3">₹999<span class="text-sm font-medium text-gray-400">/mo</span></div>
+          <ul class="mt-4 text-gray-400 space-y-2 text-sm">
+            <li>• Access to gym equipment</li>
+            <li>• Group sessions</li>
+            <li>• Locker access</li>
+          </ul>
+          <button class="mt-6 w-full bg-yellow-500 rounded-md py-2 font-semibold" onclick="openWhatsApp('Interested in Starter plan')">Get Started</button>
+        </div>
+
+        <div class="bg-gray-800 rounded-xl p-6 border-2 border-yellow-500">
+          <div class="text-sm text-gray-400">Popular</div>
+          <div class="text-3xl font-bold mt-3">₹1999<span class="text-sm font-medium text-gray-400">/mo</span></div>
+          <ul class="mt-4 text-gray-400 space-y-2 text-sm">
+            <li>• Personal training (4 sessions)</li>
+            <li>• Diet plan</li>
+            <li>• Priority support</li>
+          </ul>
+          <button class="mt-6 w-full bg-red-600 rounded-md py-2 font-semibold" onclick="openWhatsApp('Interested in Popular plan')">Get Started</button>
+        </div>
+
+        <div class="bg-gray-800 rounded-xl p-6">
+          <div class="text-sm text-gray-400">Pro</div>
+          <div class="text-3xl font-bold mt-3">₹2999<span class="text-sm font-medium text-gray-400">/mo</span></div>
+          <ul class="mt-4 text-gray-400 space-y-2 text-sm">
+            <li>• Unlimited PT sessions</li>
+            <li>• Customized nutrition</li>
+            <li>• 24/7 access</li>
+          </ul>
+          <button class="mt-6 w-full bg-yellow-500 rounded-md py-2 font-semibold" onclick="openWhatsApp('Interested in Pro plan')">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- timetable -->
+    <section id="timetable" class="max-w-6xl mx-auto px-6 py-12">
+      <h3 class="text-2xl font-bold">Weekly Timetable</h3>
+      <div class="mt-6 overflow-x-auto">
+        <table class="min-w-full text-left text-sm text-gray-300">
+          <thead>
+            <tr>
+              <th class="py-3 px-4">Time</th>
+              <th class="py-3 px-4">Mon</th>
+              <th class="py-3 px-4">Tue</th>
+              <th class="py-3 px-4">Wed</th>
+              <th class="py-3 px-4">Thu</th>
+              <th class="py-3 px-4">Fri</th>
+              <th class="py-3 px-4">Sat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-gray-800">
+              <td class="py-3 px-4">6:00 - 7:00</td>
+              <td class="py-3 px-4">HIIT</td>
+              <td class="py-3 px-4">Strength</td>
+              <td class="py-3 px-4">Yoga</td>
+              <td class="py-3 px-4">Functional</td>
+              <td class="py-3 px-4">Strength</td>
+              <td class="py-3 px-4">Bootcamp</td>
+            </tr>
+            <tr class="border-t border-gray-800">
+              <td class="py-3 px-4">18:00 - 19:00</td>
+              <td class="py-3 px-4">Strength</td>
+              <td class="py-3 px-4">Cardio</td>
+              <td class="py-3 px-4">CrossFit</td>
+              <td class="py-3 px-4">Strength</td>
+              <td class="py-3 px-4">HIIT</td>
+              <td class="py-3 px-4">Open Gym</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section id="gallery" class="py-16 bg-gray-900/40">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-2xl font-bold">Gallery</h3>
+        <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          <button class="gallery-item rounded-lg overflow-hidden" data-img="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=60"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=60" class="w-full h-40 object-cover"></button>
+          <button class="gallery-item rounded-lg overflow-hidden" data-img="https://images.unsplash.com/photo-1558611848-73f7eb4001d5?auto=format&fit=crop&w=1200&q=60"><img src="C:\Users\DELL\OneDrive\Desktop\company\IronFit\gym1.jpg" class="w-full h-40 object-cover"></button>
+          <button class="gallery-item rounded-lg overflow-hidden" data-img="https://images.unsplash.com/photo-1546484959-f8d32a1b0e2d?auto=format&fit=crop&w=1200&q=60"><img src="C:\Users\DELL\OneDrive\Desktop\company\IronFit\gym2.avif" class="w-full h-40 object-cover"></button>
+          <button class="gallery-item rounded-lg overflow-hidden" data-img="https://images.unsplash.com/photo-1526403224742-7b6f7c2f94a5?auto=format&fit=crop&w=1200&q=60"><img src="C:\Users\DELL\OneDrive\Desktop\company\IronFit\gym3.jpg" class="w-full h-40 object-cover"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- map + contact -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold">Get In Touch</h3>
+          <p class="mt-2 text-gray-400">Send us a quick message and we'll get back on WhatsApp.</p>
+          <form id="contactForm" class="mt-4 space-y-3">
+            <input required name="name" placeholder="Your name" class="w-full p-3 rounded-md bg-gray-800 border border-gray-700" />
+            <input required name="phone" placeholder="Phone" class="w-full p-3 rounded-md bg-gray-800 border border-gray-700" />
+            <textarea required name="message" placeholder="Message" class="w-full p-3 rounded-md bg-gray-800 border border-gray-700"></textarea>
+            <button type="submit" class="inline-flex items-center gap-2 bg-green-500 text-gray-900 px-4 py-2 rounded-md font-semibold">Send via WhatsApp</button>
+          </form>
+        </div>
+        <div>
+          <iframe class="w-full h-64 rounded-md" src="https://maps.google.com/maps?q=New%20Delhi&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy"></iframe>
+
+          <div class="mt-4 flex gap-3 items-center">
+            <a href="#" class="inline-flex items-center gap-2 py-2 px-3 rounded-md bg-blue-600">Instagram</a>
+            <a href="#" class="inline-flex items-center gap-2 py-2 px-3 rounded-md bg-blue-800">Facebook</a>
+            <a href="#" class="inline-flex items-center gap-2 py-2 px-3 rounded-md bg-pink-600">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="border-t border-gray-800 mt-8 py-6">
+      <div class="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500">© 2025 IronCore Gym. All rights reserved.</div>
+    </footer>
+  </main>
+
+  <!-- gallery modal -->
+  <div id="modal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+    <div class="max-w-3xl w-full p-4">
+      <img id="modalImg" src="" class="w-full rounded-md">
+      <div class="mt-3 text-right">
+        <button id="closeModal" class="px-4 py-2 rounded-md bg-gray-800">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // configuration
+    const WHATSAPP_NUMBER = '919999999999'; // replace with real number (country code + number)
+
+    function openWhatsApp(message) {
+      const text = encodeURIComponent(message || 'Hello, I am interested in your gym services');
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
+    }
+
+    // attach to CTAs
+    document.getElementById('ctaWhats').addEventListener('click', (e) => { e.preventDefault(); openWhatsApp('Hi, I am interested in joining the gym.'); });
+    document.getElementById('whatsappTop').addEventListener('click', (e) => { e.preventDefault(); openWhatsApp('Hi, I saw your gym and want to know more.'); });
+
+    // contact form -> whatsapp
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const form = new FormData(this);
+      const name = form.get('name');
+      const phone = form.get('phone');
+      const message = form.get('message');
+      const text = encodeURIComponent(`Hello, my name is ${name}. ${message}. Contact: ${phone}`);
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
+    });
+
+    // gallery modal
+    document.querySelectorAll('.gallery-item').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const src = btn.getAttribute('data-img');
+        document.getElementById('modalImg').src = src;
+        document.getElementById('modal').classList.remove('hidden');
+        document.getElementById('modal').classList.add('flex');
+      });
+    });
+    document.getElementById('closeModal').addEventListener('click', () => {
+      document.getElementById('modal').classList.add('hidden');
+      document.getElementById('modal').classList.remove('flex');
+    });
+
+    // mobile menu
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
+
+
